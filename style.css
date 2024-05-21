@@ -4,12 +4,23 @@
 
 :root {
     --gradient: linear-gradient(
-        -45deg, 
-        #7BDFF2, 
-        #B2F7EF, 
-        #F7D6E0,
-        #F2B5D4
+        45deg, 
+        #CDB4DB,
+        #FFC8DD,
+        #FFAFCC,
+        #BDE0FE,
+        #A2D2FF,
+        #98F5E1,
+        #B9FBC0
         );
+    --gradient2: linear-gradient(
+        -45deg,
+        #F08080,
+        #F4978E,
+        #F8AD9D,
+        #FBC4AB,
+        #FFDAB9
+    );
 }
 
 * {
@@ -54,6 +65,8 @@ nav {
     justify-content: space-around;
     align-items: center;
     height: 17vh;
+    /* position: fixed;
+    width: 100%; */
 }
 
 .nav-links {
@@ -166,8 +179,9 @@ a:hover {
 /* SECTIONS */
 
 section {
-    padding-top: 3vh;
-    height: 97vh;
+    padding-top: 10vh; 
+    padding-bottom: 10vh;
+    /*height: 80vh; */
     margin: 0 10rem;
     box-sizing: border-box;
     min-height: fit-content;
@@ -317,12 +331,12 @@ section {
 }
 
 .details-container {
-    padding: 1.5rem;
+    padding: 1.6rem;
     flex: 1;
-    background: white;
+    /* background: white; */
     border-radius: 2rem;
-    border: rgb(53,53,53) 0.1rem solid;
-    border-color: rgb(163,163,163);
+    /* border: rgb(53,53,53) 0.1rem solid;
+    border-color: rgb(163,163,163); */
     text-align: center;
 }
 
@@ -383,14 +397,16 @@ article .icon {
 }
 
 .color-container {
-    border-color: rgb(163,153,163);
-    background: rgb(250,250,250);
+    /* border-color: rgb(163,153,163); */
+    background: white;
 }
 
 .project-img {
     border-radius: 2rem;
-    width: 90%;
-    height: 90%;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    overflow: hidden;
 }
 
 .project-title {
@@ -401,6 +417,14 @@ article .icon {
 .project-btn {
     color: black;
     border-color: rgb(163,163,163);
+}
+
+#projects .article-container {
+    overflow: hidden;
+    position: relative;
+    padding-bottom: 80%;
+    width: 80%;
+    margin: 1em auto;
 }
 
 /* CONTACT SECTION */
